@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasudha Reddy - Health Informatics & Analytics Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #e0f2fe; /* Lighter blue background */
+            color: #334155; /* Darker text color */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        section {
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* More rounded corners for sections */
+            padding: 2.5rem; /* Increased padding */
+            margin-bottom: 2.5rem; /* Increased margin-bottom */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Stronger shadow */
+            border: 1px solid #e2e8f0; /* Subtle border */
+        }
+        h1, h2 {
+            color: #1a202c; /* Even darker heading color */
+            font-weight: 800; /* Extra bold for headings */
+        }
+        h1 {
+            font-size: 3.5rem; /* Larger main heading */
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.05em; /* Tighter letter spacing */
+        }
+        h2 {
+            font-size: 2rem; /* Larger section headings */
+            margin-bottom: 1.5rem; /* Increased margin */
+            border-bottom: 3px solid #60a5fa; /* More prominent blue border under headings */
+            padding-bottom: 0.75rem;
+            text-transform: uppercase; /* Uppercase for section titles */
+            letter-spacing: 0.025em;
+        }
+        nav a {
+            color: #3b82f6; /* Brighter blue for nav links */
+            font-weight: 700; /* Bolder nav links */
+            padding: 0.75rem 1.5rem; /* Larger padding */
+            border-radius: 0.75rem; /* More rounded */
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        nav a:hover {
+            background-color: #2563eb; /* Darker blue on hover */
+            color: #ffffff;
+            transform: translateY(-2px); /* Slight lift effect */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.75rem; /* Increased margin */
+        }
+        .skill-list li {
+            background-color: #bfdbfe; /* Medium blue for skill tags */
+            padding: 0.5rem 1rem;
+            border-radius: 1rem; /* More rounded pills */
+            display: inline-block;
+            margin-right: 0.75rem;
+            margin-bottom: 0.75rem;
+            font-size: 1rem; /* Slightly larger font */
+            color: #1e40af; /* Darker blue text for skills */
+            font-weight: 600;
+        }
+        .project-item {
+            border: 1px solid #93c5fd; /* Blue border for project items */
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            background-color: #eff6ff; /* Lighter blue background for projects */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out;
+        }
+        .project-item:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+        }
+        .project-item h3 {
+            font-size: 1.5rem; /* Larger project title */
+            color: #1e293b;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+        }
+        .project-item a {
+            color: #1d4ed8; /* Darker blue link for project links */
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.2s ease;
+        }
+        .project-item a:hover {
+            text-decoration: underline;
+            color: #0c4a6e; /* Even darker blue on hover */
+        }
+        footer {
+            background-color: #cbd5e1; /* Gray footer */
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-top: 2.5rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container">
+        <!-- Header Section -->
+        <header class="text-center py-10 bg-white rounded-b-3xl shadow-2xl mb-10 border-b-4 border-blue-500">
+            <h1 class="text-6xl font-extrabold text-gray-900 leading-tight">VAYULURU.VASUDHAREDDY</h1>
+            <p class="text-2xl text-gray-600 mt-4 font-semibold">Health Informatics & Analytics Student</p>
+            <nav class="mt-8 flex justify-center space-x-6">
+                <a href="#about" class="block">About Me</a>
+                <a href="#education" class="block">Education</a>
+                <a href="#experience" class="block">Experience</a>
+                <a href="#skills" class="block">Skills</a>
+                <a href="#projects" class="block">Projects</a>
+                <a href="#contact" class="block">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- About Me Section -->
+            <section id="about">
+                <h2 class="text-4xl">About Me</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    As a driven and ambitious individual, I am passionately committed to leveraging the power of data to address complex challenges within the healthcare industry. Currently pursuing my Master's in Health Informatics and Analytics, my academic journey is fortified by a robust foundation in Cardiac Perfusion Technology. This unique blend of clinical understanding and analytical acumen equips me to bridge the gap between medical practice and data-driven insights, aiming to improve patient outcomes and optimize healthcare systems. I am eager to apply my analytical skills, critical thinking, and hands-on experience to innovative roles in health informatics.
+                </p>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education">
+                <h2 class="text-4xl">Education</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800">MSc Health Informatics and Analytics</h3>
+                        <p class="text-gray-600 text-lg">Ongoing | Apollo University, Chittoor</p>
+                        <p class="text-gray-700 mt-1"><em>Focus: Advanced data analysis, healthcare information systems, and applied informatics principles.</em></p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800">BSc Cardiac Perfusion Technology</h3>
+                        <p class="text-gray-600 text-lg">2020 – 2024 | Dr. MGR Educational and Research Institute, Chennai</p>
+                        <p class="text-gray-700 mt-1"><em>Percentage: 73.86%</em></p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800">XII Standard (BIPC - Biology, Physics, Chemistry)</h3>
+                        <p class="text-gray-600 text-lg">2018 – 2020 | Narayana Junior College, Dhanalakshmipuram</p>
+                        <p class="text-gray-700 mt-1"><em>Stream: BIPC (Biology, Physics, Chemistry) | GPA: 9.12</em></p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800">10th Standard</h3>
+                        <p class="text-gray-600 text-lg">2017 | Narayana e-Techno School, Naidupeta</p>
+                        <p class="text-gray-700 mt-1"><em>GPA: 8.7</em></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience">
+                <h2 class="text-4xl">Experience</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800">Cardiac Perfusion Technology Intern</h3>
+                        <p class="text-gray-600 text-lg">2023 – 2024 (1 Year) | ACS Medical College and Hospital, Chennai & Lalithambigai Hospital, Chennai</p>
+                        <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
+                            <li>Assisted actively in cardiac perfusion procedures and surgeries, gaining firsthand exposure to critical patient care scenarios.</li>
+                            <li>Developed hands-on proficiency with cardiopulmonary bypass (CPB) machines and related equipment, ensuring optimal patient support during complex medical interventions.</li>
+                            <li>Collaborated effectively with multidisciplinary surgical teams, demonstrating strong communication and adaptability in high-pressure clinical environments.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2 class="text-4xl">Skills</h2>
+                <div class="mb-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Technical & Analytical Skills:</h3>
+                    <ul class="skill-list flex flex-wrap gap-3">
+                        <li>Python</li>
+                        <li>NumPy</li>
+                        <li>Pandas</li>
+                        <li>Matplotlib</li>
+                        <li>Microsoft Office (Word, PowerPoint, Outlook)</li>
+                        <li>Google Suite (Docs, Sheets, Slides)</li>
+                        <li>Operating Cardiopulmonary Bypass Machine (CPB)</li>
+                    </ul>
+                </div>
+                <div class="mb-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Soft Skills:</h3>
+                    <ul class="skill-list flex flex-wrap gap-3">
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                        <li>Problem-solving</li>
+                        <li>Time Management</li>
+                        <li>Adaptability</li>
+                        <li>Critical Thinking</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Languages:</h3>
+                    <ul class="skill-list flex flex-wrap gap-3">
+                        <li>Telugu (Native)</li>
+                        <li>English</li>
+                        <li>Tamil</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2 class="text-4xl">Projects</h2>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    This section demonstrates my practical application of skills in Health Informatics and Analytics, showcasing my ability to solve real-world problems.
+                </p>
+                <div class="space-y-6">
+                    <!-- PerfusionCalc Project -->
+                    <div class="project-item">
+                        <h3 class="font-bold">Project Title: PerfusionCalc</h3>
+                        <p class="text-gray-700 text-lg"><strong>Role & Contributions:</strong> Developer, Data Analyst</p>
+                        <p class="text-gray-700 mt-2 leading-relaxed"><strong>Problem Addressed:</strong> The "PerfusionCalc" project addresses the critical need for accurate and efficient calculations in cardiac perfusion procedures. Manual calculations can be time-consuming and prone to human error, which can have significant implications in a clinical setting. This tool aims to mitigate these risks by providing a reliable and streamlined method for essential perfusion-related computations.</p>
+                        <p class="text-gray-700 mt-2 leading-relaxed"><strong>Technologies Used:</strong> Developed primarily using Python, this project likely leverages its robust mathematical capabilities for precise calculations. Depending on the interface, it might also integrate libraries for graphical user interface (GUI) development to ensure ease of use for medical professionals.</p>
+                        <p class="text-gray-700 mt-2 leading-relaxed"><strong>Key Outcomes/Results:</strong> "PerfusionCalc" delivers a functional and user-friendly tool that assists perfusionists with critical calculations, enhancing accuracy and operational workflow during cardiac surgeries. This project showcases my ability to apply programming and analytical skills to solve real-world clinical challenges, bridging my background in Cardiac Perfusion Technology with my expertise in Health Informatics.</p>
+                        <p class="mt-4">
+                            <a href="https://github.com/vasudhareddy6429/perfusioncalc-App" target="_blank" class="text-blue-700 hover:text-blue-900 text-lg">View Project on GitHub &rarr;</a>
+                        </p>
+                    </div>
+                    <!-- The empty project placeholder has been removed -->
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2 class="text-4xl">Contact</h2>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    I am open to discussing opportunities in health informatics, data analytics, and healthcare technology. Please feel free to connect.
+                </p>
+                <ul class="text-gray-700 text-lg space-y-3">
+                    <li><strong>Email:</strong> <a href="mailto:vayuluruvasudha@gmail.com" class="text-blue-600 hover:underline">vayuluruvasudha@gmail.com</a></li>
+                    <li><strong>Phone:</strong> +91 7995315749</li>
+                    <li><strong>Address:</strong> 5-8-182, BMR LAYOUT, Naidupeta, Pincode: 524126</li>
+                    <!-- Add your LinkedIn profile here if you have one -->
+                    <!-- <li><strong>LinkedIn:</strong> <a href="YOUR_LINKEDIN_URL_HERE" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/yourprofile</a></li> -->
+                </ul>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="text-center py-8 text-gray-700 text-base mt-10">
+            <p>&copy; 2025 VAYULURU.VASUDHAREDDY. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
