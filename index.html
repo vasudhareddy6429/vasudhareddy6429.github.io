@@ -6,7 +6,7 @@
     <title>Vasudha Reddy - Health Informatics & Analytics Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -17,40 +17,85 @@
         .container {
             max-width: 960px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 1rem; /* Adjusted padding for smaller screens */
+        }
+        @media (min-width: 768px) { /* Apply larger padding on medium screens and up */
+            .container {
+                padding: 2rem;
+            }
         }
         section {
             background-color: #ffffff;
             border-radius: 1.5rem; /* More rounded corners for sections */
-            padding: 2.5rem; /* Increased padding */
-            margin-bottom: 2.5rem; /* Increased margin-bottom */
+            padding: 1.5rem; /* Adjusted padding for smaller screens */
+            margin-bottom: 1.5rem; /* Adjusted margin-bottom */
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Stronger shadow */
             border: 1px solid #e2e8f0; /* Subtle border */
+        }
+        @media (min-width: 768px) {
+            section {
+                padding: 2.5rem; /* Larger padding on medium screens and up */
+                margin-bottom: 2.5rem;
+            }
         }
         h1, h2 {
             color: #1a202c; /* Even darker heading color */
             font-weight: 800; /* Extra bold for headings */
+            text-align: center; /* Center align headings */
         }
         h1 {
-            font-size: 3.5rem; /* Larger main heading */
-            margin-bottom: 0.75rem;
-            letter-spacing: -0.05em; /* Tighter letter spacing */
+            font-size: 2.5rem; /* Smaller main heading for mobile */
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.025em;
+        }
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3.5rem; /* Larger main heading on medium screens and up */
+                margin-bottom: 0.75rem;
+                letter-spacing: -0.05em;
+            }
         }
         h2 {
-            font-size: 2rem; /* Larger section headings */
-            margin-bottom: 1.5rem; /* Increased margin */
+            font-size: 1.75rem; /* Smaller section headings for mobile */
+            margin-bottom: 1rem;
             border-bottom: 3px solid #60a5fa; /* More prominent blue border under headings */
             padding-bottom: 0.75rem;
-            text-transform: uppercase; /* Uppercase for section titles */
+            text-transform: uppercase;
             letter-spacing: 0.025em;
+        }
+        @media (min-width: 768px) {
+            h2 {
+                font-size: 2rem; /* Larger section headings on medium screens and up */
+                margin-bottom: 1.5rem;
+            }
+        }
+        nav {
+            display: flex; /* Use flexbox for navigation */
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+            justify-content: center; /* Center align nav items */
+            gap: 0.5rem; /* Space between nav items */
+            margin-top: 1.5rem; /* Adjusted margin */
+        }
+        @media (min-width: 768px) {
+            nav {
+                gap: 1.5rem; /* Larger gap on medium screens and up */
+                margin-top: 2rem;
+            }
         }
         nav a {
             color: #3b82f6; /* Brighter blue for nav links */
             font-weight: 700; /* Bolder nav links */
-            padding: 0.75rem 1.5rem; /* Larger padding */
+            padding: 0.6rem 1rem; /* Adjusted padding for mobile */
             border-radius: 0.75rem; /* More rounded */
             transition: all 0.3s ease;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            font-size: 0.9rem; /* Smaller font size for mobile nav */
+        }
+        @media (min-width: 768px) {
+            nav a {
+                padding: 0.75rem 1.5rem; /* Larger padding on medium screens and up */
+                font-size: 1rem; /* Standard font size on medium screens and up */
+            }
         }
         nav a:hover {
             background-color: #2563eb; /* Darker blue on hover */
@@ -67,39 +112,61 @@
         }
         .skill-list li {
             background-color: #bfdbfe; /* Medium blue for skill tags */
-            padding: 0.5rem 1rem;
+            padding: 0.4rem 0.8rem; /* Adjusted padding for mobile */
             border-radius: 1rem; /* More rounded pills */
             display: inline-block;
-            margin-right: 0.75rem;
-            margin-bottom: 0.75rem;
-            font-size: 1rem; /* Slightly larger font */
+            margin-right: 0.6rem; /* Adjusted margin */
+            margin-bottom: 0.6rem;
+            font-size: 0.9rem; /* Adjusted font size for mobile */
             color: #1e40af; /* Darker blue text for skills */
             font-weight: 600;
+        }
+        @media (min-width: 768px) {
+            .skill-list li {
+                padding: 0.5rem 1rem;
+                margin-right: 0.75rem;
+                margin-bottom: 0.75rem;
+                font-size: 1rem;
+            }
         }
         .project-item {
             border: 1px solid #93c5fd; /* Blue border for project items */
             border-radius: 1rem;
-            padding: 2rem;
-            margin-bottom: 2rem;
+            padding: 1.5rem; /* Adjusted padding for mobile */
+            margin-bottom: 1.5rem;
             background-color: #eff6ff; /* Lighter blue background for projects */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             transition: transform 0.2s ease-in-out;
         }
-        .project-item:hover {
-            transform: translateY(-5px); /* Lift effect on hover */
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+        @media (min-width: 768px) {
+            .project-item {
+                padding: 2rem; /* Larger padding on medium screens and up */
+                margin-bottom: 2rem;
+            }
         }
         .project-item h3 {
-            font-size: 1.5rem; /* Larger project title */
+            font-size: 1.25rem; /* Adjusted project title size for mobile */
             color: #1e293b;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.5rem;
             font-weight: 700;
+        }
+        @media (min-width: 768px) {
+            .project-item h3 {
+                font-size: 1.5rem; /* Standard project title size on medium screens and up */
+                margin-bottom: 0.75rem;
+            }
         }
         .project-item a {
             color: #1d4ed8; /* Darker blue link for project links */
             text-decoration: none;
             font-weight: 700;
             transition: color 0.2s ease;
+            font-size: 0.95rem; /* Adjusted link font size for mobile */
+        }
+        @media (min-width: 768px) {
+            .project-item a {
+                font-size: 1rem; /* Standard link font size on medium screens and up */
+            }
         }
         .project-item a:hover {
             text-decoration: underline;
@@ -108,19 +175,27 @@
         footer {
             background-color: #cbd5e1; /* Gray footer */
             border-radius: 1rem;
-            padding: 1.5rem;
-            margin-top: 2.5rem;
+            padding: 1rem; /* Adjusted padding for mobile */
+            margin-top: 1.5rem; /* Adjusted margin */
             box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
+            font-size: 0.85rem; /* Adjusted font size for mobile footer */
+        }
+        @media (min-width: 768px) {
+            footer {
+                padding: 1.5rem;
+                margin-top: 2.5rem;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
 <body class="antialiased">
     <div class="container">
         <!-- Header Section -->
-        <header class="text-center py-10 bg-white rounded-b-3xl shadow-2xl mb-10 border-b-4 border-blue-500">
-            <h1 class="text-6xl font-extrabold text-gray-900 leading-tight">VAYULURU.VASUDHAREDDY</h1>
-            <p class="text-2xl text-gray-600 mt-4 font-semibold">Health Informatics & Analytics Student</p>
-            <nav class="mt-8 flex justify-center space-x-6">
+        <header class="text-center py-6 bg-white rounded-b-3xl shadow-2xl mb-8 border-b-4 border-blue-500">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">VAYULURU.VASUDHAREDDY</h1>
+            <p class="text-lg sm:text-xl md:text-2xl text-gray-600 mt-2 sm:mt-4 font-semibold">Health Informatics & Analytics Student</p>
+            <nav class="mt-6 sm:mt-8 flex flex-wrap justify-center gap-2 sm:gap-4 md:space-x-6">
                 <a href="#about" class="block">About Me</a>
                 <a href="#education" class="block">Education</a>
                 <a href="#experience" class="block">Experience</a>
@@ -133,34 +208,34 @@
         <main>
             <!-- About Me Section -->
             <section id="about">
-                <h2 class="text-4xl">About Me</h2>
-                <p class="text-lg text-gray-700 leading-relaxed">
+                <h2 class="text-3xl sm:text-4xl">About Me</h2>
+                <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
                     As a driven and ambitious individual, I am passionately committed to leveraging the power of data to address complex challenges within the healthcare industry. Currently pursuing my Master's in Health Informatics and Analytics, my academic journey is fortified by a robust foundation in Cardiac Perfusion Technology. This unique blend of clinical understanding and analytical acumen equips me to bridge the gap between medical practice and data-driven insights, aiming to improve patient outcomes and optimize healthcare systems. I am eager to apply my analytical skills, critical thinking, and hands-on experience to innovative roles in health informatics.
                 </p>
             </section>
 
             <!-- Education Section -->
             <section id="education">
-                <h2 class="text-4xl">Education</h2>
-                <div class="space-y-6">
+                <h2 class="text-3xl sm:text-4xl">Education</h2>
+                <div class="space-y-4 sm:space-y-6">
                     <div>
-                        <h3 class="text-2xl font-semibold text-gray-800">MSc Health Informatics and Analytics</h3>
-                        <p class="text-gray-600 text-lg">Ongoing | Apollo University, Chittoor</p>
+                        <h3 class="text-xl sm:text-2xl font-semibold text-gray-800">MSc Health Informatics and Analytics</h3>
+                        <p class="text-base sm:text-lg text-gray-600">Ongoing | Apollo University, Chittoor</p>
                         <p class="text-gray-700 mt-1"><em>Focus: Advanced data analysis, healthcare information systems, and applied informatics principles.</em></p>
                     </div>
                     <div>
-                        <h3 class="text-2xl font-semibold text-gray-800">BSc Cardiac Perfusion Technology</h3>
-                        <p class="text-gray-600 text-lg">2020 – 2024 | Dr. MGR Educational and Research Institute, Chennai</p>
+                        <h3 class="text-xl sm:text-2xl font-semibold text-gray-800">BSc Cardiac Perfusion Technology</h3>
+                        <p class="text-base sm:text-lg text-gray-600">2020 – 2024 | Dr. MGR Educational and Research Institute, Chennai</p>
                         <p class="text-gray-700 mt-1"><em>Percentage: 73.86%</em></p>
                     </div>
                     <div>
-                        <h3 class="text-2xl font-semibold text-gray-800">XII Standard (BIPC - Biology, Physics, Chemistry)</h3>
-                        <p class="text-gray-600 text-lg">2018 – 2020 | Narayana Junior College, Dhanalakshmipuram</p>
+                        <h3 class="text-xl sm:text-2xl font-semibold text-gray-800">XII Standard (BIPC - Biology, Physics, Chemistry)</h3>
+                        <p class="text-base sm:text-lg text-gray-600">2018 – 2020 | Narayana Junior College, Dhanalakshmipuram</p>
                         <p class="text-gray-700 mt-1"><em>Stream: BIPC (Biology, Physics, Chemistry) | GPA: 9.12</em></p>
                     </div>
                     <div>
-                        <h3 class="text-2xl font-semibold text-gray-800">10th Standard</h3>
-                        <p class="text-gray-600 text-lg">2017 | Narayana e-Techno School, Naidupeta</p>
+                        <h3 class="text-xl sm:text-2xl font-semibold text-gray-800">10th Standard</h3>
+                        <p class="text-base sm:text-lg text-gray-600">2017 | Narayana e-Techno School, Naidupeta</p>
                         <p class="text-gray-700 mt-1"><em>GPA: 8.7</em></p>
                     </div>
                 </div>
@@ -168,12 +243,12 @@
 
             <!-- Experience Section -->
             <section id="experience">
-                <h2 class="text-4xl">Experience</h2>
-                <div class="space-y-6">
+                <h2 class="text-3xl sm:text-4xl">Experience</h2>
+                <div class="space-y-4 sm:space-y-6">
                     <div>
-                        <h3 class="text-2xl font-semibold text-gray-800">Cardiac Perfusion Technology Intern</h3>
-                        <p class="text-gray-600 text-lg">2023 – 2024 (1 Year) | ACS Medical College and Hospital, Chennai & Lalithambigai Hospital, Chennai</p>
-                        <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
+                        <h3 class="text-xl sm:text-2xl font-semibold text-gray-800">Cardiac Perfusion Technology Intern</h3>
+                        <p class="text-base sm:text-lg text-gray-600">2023 – 2024 (1 Year) | ACS Medical College and Hospital, Chennai & Lalithambigai Hospital, Chennai</p>
+                        <ul class="list-disc list-inside text-base sm:text-lg text-gray-700 mt-2 sm:mt-3 space-y-1 sm:space-y-2">
                             <li>Assisted actively in cardiac perfusion procedures and surgeries, gaining firsthand exposure to critical patient care scenarios.</li>
                             <li>Developed hands-on proficiency with cardiopulmonary bypass (CPB) machines and related equipment, ensuring optimal patient support during complex medical interventions.</li>
                             <li>Collaborated effectively with multidisciplinary surgical teams, demonstrating strong communication and adaptability in high-pressure clinical environments.</li>
@@ -184,10 +259,10 @@
 
             <!-- Skills Section -->
             <section id="skills">
-                <h2 class="text-4xl">Skills</h2>
-                <div class="mb-8">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Technical & Analytical Skills:</h3>
-                    <ul class="skill-list flex flex-wrap gap-3">
+                <h2 class="text-3xl sm:text-4xl">Skills</h2>
+                <div class="mb-6 sm:mb-8">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2 sm:mb-4">Technical & Analytical Skills:</h3>
+                    <ul class="skill-list flex flex-wrap gap-2 sm:gap-3">
                         <li>Python</li>
                         <li>NumPy</li>
                         <li>Pandas</li>
@@ -197,9 +272,9 @@
                         <li>Operating Cardiopulmonary Bypass Machine (CPB)</li>
                     </ul>
                 </div>
-                <div class="mb-8">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Soft Skills:</h3>
-                    <ul class="skill-list flex flex-wrap gap-3">
+                <div class="mb-6 sm:mb-8">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2 sm:mb-4">Soft Skills:</h3>
+                    <ul class="skill-list flex flex-wrap gap-2 sm:gap-3">
                         <li>Communication</li>
                         <li>Teamwork</li>
                         <li>Problem-solving</li>
@@ -209,8 +284,8 @@
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Languages:</h3>
-                    <ul class="skill-list flex flex-wrap gap-3">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2 sm:mb-4">Languages:</h3>
+                    <ul class="skill-list flex flex-wrap gap-2 sm:gap-3">
                         <li>Telugu (Native)</li>
                         <li>English</li>
                         <li>Tamil</li>
@@ -220,33 +295,32 @@
 
             <!-- Projects Section -->
             <section id="projects">
-                <h2 class="text-4xl">Projects</h2>
-                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                <h2 class="text-3xl sm:text-4xl">Projects</h2>
+                <p class="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
                     This section demonstrates my practical application of skills in Health Informatics and Analytics, showcasing my ability to solve real-world problems.
                 </p>
-                <div class="space-y-6">
+                <div class="space-y-4 sm:space-y-6">
                     <!-- PerfusionCalc Project -->
                     <div class="project-item">
-                        <h3 class="font-bold">Project Title: PerfusionCalc</h3>
-                        <p class="text-gray-700 text-lg"><strong>Role & Contributions:</strong> Developer, Data Analyst</p>
+                        <h3 class="font-bold text-xl sm:text-2xl">Project Title: PerfusionCalc</h3>
+                        <p class="text-base sm:text-lg text-gray-700"><strong>Role & Contributions:</strong> Developer, Data Analyst</p>
                         <p class="text-gray-700 mt-2 leading-relaxed"><strong>Problem Addressed:</strong> The "PerfusionCalc" project addresses the critical need for accurate and efficient calculations in cardiac perfusion procedures. Manual calculations can be time-consuming and prone to human error, which can have significant implications in a clinical setting. This tool aims to mitigate these risks by providing a reliable and streamlined method for essential perfusion-related computations.</p>
                         <p class="text-gray-700 mt-2 leading-relaxed"><strong>Technologies Used:</strong> Developed primarily using Python, this project likely leverages its robust mathematical capabilities for precise calculations. Depending on the interface, it might also integrate libraries for graphical user interface (GUI) development to ensure ease of use for medical professionals.</p>
                         <p class="text-gray-700 mt-2 leading-relaxed"><strong>Key Outcomes/Results:</strong> "PerfusionCalc" delivers a functional and user-friendly tool that assists perfusionists with critical calculations, enhancing accuracy and operational workflow during cardiac surgeries. This project showcases my ability to apply programming and analytical skills to solve real-world clinical challenges, bridging my background in Cardiac Perfusion Technology with my expertise in Health Informatics.</p>
-                        <p class="mt-4">
-                            <a href="https://github.com/vasudhareddy6429/perfusioncalc-App" target="_blank" class="text-blue-700 hover:text-blue-900 text-lg">View Project on GitHub &rarr;</a>
+                        <p class="mt-3 sm:mt-4">
+                            <a href="https://github.com/vasudhareddy6429/perfusioncalc-App" target="_blank" class="text-blue-700 hover:text-blue-900 text-base sm:text-lg">View Project on GitHub &rarr;</a>
                         </p>
                     </div>
-                    <!-- The empty project placeholder has been removed -->
                 </div>
             </section>
 
             <!-- Contact Section -->
             <section id="contact">
-                <h2 class="text-4xl">Contact</h2>
-                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                <h2 class="text-3xl sm:text-4xl">Contact</h2>
+                <p class="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
                     I am open to discussing opportunities in health informatics, data analytics, and healthcare technology. Please feel free to connect.
                 </p>
-                <ul class="text-gray-700 text-lg space-y-3">
+                <ul class="text-base sm:text-lg text-gray-700 space-y-2 sm:space-y-3">
                     <li><strong>Email:</strong> <a href="mailto:vayuluruvasudha@gmail.com" class="text-blue-600 hover:underline">vayuluruvasudha@gmail.com</a></li>
                     <li><strong>Phone:</strong> +91 7995315749</li>
                     <li><strong>Address:</strong> 5-8-182, BMR LAYOUT, Naidupeta, Pincode: 524126</li>
@@ -257,7 +331,7 @@
         </main>
 
         <!-- Footer Section -->
-        <footer class="text-center py-8 text-gray-700 text-base mt-10">
+        <footer class="text-center py-6 text-gray-700 text-sm mt-8">
             <p>&copy; 2025 VAYULURU.VASUDHAREDDY. All rights reserved.</p>
         </footer>
     </div>
