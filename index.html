@@ -17,175 +17,196 @@
         .container {
             max-width: 960px;
             margin: 0 auto;
-            padding: 1rem; /* Adjusted padding for smaller screens */
+            padding: 1rem; /* Default padding for small screens */
         }
-        @media (min-width: 768px) { /* Apply larger padding on medium screens and up */
+        @media (min-width: 640px) { /* Small screens (sm) and up */
+            .container {
+                padding: 1.5rem;
+            }
+        }
+        @media (min-width: 768px) { /* Medium screens (md) and up */
             .container {
                 padding: 2rem;
             }
         }
+
         section {
             background-color: #ffffff;
-            border-radius: 1.5rem; /* More rounded corners for sections */
-            padding: 1.5rem; /* Adjusted padding for smaller screens */
-            margin-bottom: 1.5rem; /* Adjusted margin-bottom */
+            border-radius: 1.5rem; /* More rounded corners */
+            padding: 1.5rem; /* Default padding for sections */
+            margin-bottom: 1.5rem; /* Default margin-bottom */
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Stronger shadow */
             border: 1px solid #e2e8f0; /* Subtle border */
         }
+        @media (min-width: 640px) {
+            section {
+                padding: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
         @media (min-width: 768px) {
             section {
-                padding: 2.5rem; /* Larger padding on medium screens and up */
+                padding: 2.5rem;
                 margin-bottom: 2.5rem;
             }
         }
+
         h1, h2 {
-            color: #1a202c; /* Even darker heading color */
-            font-weight: 800; /* Extra bold for headings */
-            text-align: center; /* Center align headings */
+            color: #1a202c;
+            font-weight: 800;
+            text-align: center;
         }
         h1 {
-            font-size: 2.5rem; /* Smaller main heading for mobile */
+            font-size: 2.5rem; /* Default for mobile */
             margin-bottom: 0.5rem;
             letter-spacing: -0.025em;
         }
-        @media (min-width: 768px) {
-            h1 {
-                font-size: 3.5rem; /* Larger main heading on medium screens and up */
-                margin-bottom: 0.75rem;
-                letter-spacing: -0.05em;
-            }
+        @media (min-width: 640px) {
+            h1 { font-size: 3rem; }
         }
+        @media (min-width: 768px) {
+            h1 { font-size: 3.5rem; margin-bottom: 0.75rem; letter-spacing: -0.05em; }
+        }
+
         h2 {
-            font-size: 1.75rem; /* Smaller section headings for mobile */
+            font-size: 1.75rem; /* Default for mobile */
             margin-bottom: 1rem;
-            border-bottom: 3px solid #60a5fa; /* More prominent blue border under headings */
+            border-bottom: 3px solid #60a5fa;
             padding-bottom: 0.75rem;
             text-transform: uppercase;
             letter-spacing: 0.025em;
         }
-        @media (min-width: 768px) {
-            h2 {
-                font-size: 2rem; /* Larger section headings on medium screens and up */
-                margin-bottom: 1.5rem;
-            }
+        @media (min-width: 640px) {
+            h2 { font-size: 1.875rem; }
         }
+        @media (min-width: 768px) {
+            h2 { font-size: 2rem; margin-bottom: 1.5rem; }
+        }
+
         nav {
-            display: flex; /* Use flexbox for navigation */
-            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-            justify-content: center; /* Center align nav items */
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap */
+            justify-content: center;
             gap: 0.5rem; /* Space between nav items */
-            margin-top: 1.5rem; /* Adjusted margin */
+            margin-top: 1.5rem;
+        }
+        @media (min-width: 640px) {
+            nav { gap: 1rem; }
         }
         @media (min-width: 768px) {
-            nav {
-                gap: 1.5rem; /* Larger gap on medium screens and up */
-                margin-top: 2rem;
-            }
+            nav { gap: 1.5rem; margin-top: 2rem; }
         }
+
         nav a {
-            color: #3b82f6; /* Brighter blue for nav links */
-            font-weight: 700; /* Bolder nav links */
-            padding: 0.6rem 1rem; /* Adjusted padding for mobile */
-            border-radius: 0.75rem; /* More rounded */
+            color: #3b82f6;
+            font-weight: 700;
+            padding: 0.6rem 1rem; /* Default padding for mobile */
+            border-radius: 0.75rem;
             transition: all 0.3s ease;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-            font-size: 0.9rem; /* Smaller font size for mobile nav */
+            font-size: 0.9rem; /* Default font size for mobile nav */
+        }
+        @media (min-width: 640px) {
+            nav a { padding: 0.7rem 1.2rem; font-size: 0.95rem; }
         }
         @media (min-width: 768px) {
-            nav a {
-                padding: 0.75rem 1.5rem; /* Larger padding on medium screens and up */
-                font-size: 1rem; /* Standard font size on medium screens and up */
-            }
+            nav a { padding: 0.75rem 1.5rem; font-size: 1rem; }
         }
         nav a:hover {
-            background-color: #2563eb; /* Darker blue on hover */
+            background-color: #2563eb;
             color: #ffffff;
-            transform: translateY(-2px); /* Slight lift effect */
+            transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
         ul {
             list-style: none;
             padding: 0;
         }
         li {
-            margin-bottom: 0.75rem; /* Increased margin */
+            margin-bottom: 0.75rem;
         }
+
         .skill-list li {
-            background-color: #bfdbfe; /* Medium blue for skill tags */
-            padding: 0.4rem 0.8rem; /* Adjusted padding for mobile */
-            border-radius: 1rem; /* More rounded pills */
+            background-color: #bfdbfe;
+            padding: 0.4rem 0.8rem; /* Default padding for mobile */
+            border-radius: 1rem;
             display: inline-block;
-            margin-right: 0.6rem; /* Adjusted margin */
+            margin-right: 0.6rem;
             margin-bottom: 0.6rem;
-            font-size: 0.9rem; /* Adjusted font size for mobile */
-            color: #1e40af; /* Darker blue text for skills */
+            font-size: 0.9rem; /* Default font size for mobile */
+            color: #1e40af;
             font-weight: 600;
         }
-        @media (min-width: 768px) {
-            .skill-list li {
-                padding: 0.5rem 1rem;
-                margin-right: 0.75rem;
-                margin-bottom: 0.75rem;
-                font-size: 1rem;
-            }
+        @media (min-width: 640px) {
+            .skill-list li { padding: 0.45rem 0.9rem; font-size: 0.95rem; }
         }
+        @media (min-width: 768px) {
+            .skill-list li { padding: 0.5rem 1rem; margin-right: 0.75rem; margin-bottom: 0.75rem; font-size: 1rem; }
+        }
+
         .project-item {
-            border: 1px solid #93c5fd; /* Blue border for project items */
+            border: 1px solid #93c5fd;
             border-radius: 1rem;
-            padding: 1.5rem; /* Adjusted padding for mobile */
+            padding: 1.5rem; /* Default padding for mobile */
             margin-bottom: 1.5rem;
-            background-color: #eff6ff; /* Lighter blue background for projects */
+            background-color: #eff6ff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             transition: transform 0.2s ease-in-out;
         }
+        @media (min-width: 640px) {
+            .project-item { padding: 1.75rem; margin-bottom: 1.75rem; }
+        }
         @media (min-width: 768px) {
-            .project-item {
-                padding: 2rem; /* Larger padding on medium screens and up */
-                margin-bottom: 2rem;
-            }
+            .project-item { padding: 2rem; margin-bottom: 2rem; }
+        }
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
         }
         .project-item h3 {
-            font-size: 1.25rem; /* Adjusted project title size for mobile */
+            font-size: 1.25rem; /* Default for mobile */
             color: #1e293b;
             margin-bottom: 0.5rem;
             font-weight: 700;
         }
+        @media (min-width: 640px) {
+            .project-item h3 { font-size: 1.375rem; }
+        }
         @media (min-width: 768px) {
-            .project-item h3 {
-                font-size: 1.5rem; /* Standard project title size on medium screens and up */
-                margin-bottom: 0.75rem;
-            }
+            .project-item h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
         }
         .project-item a {
-            color: #1d4ed8; /* Darker blue link for project links */
+            color: #1d4ed8;
             text-decoration: none;
             font-weight: 700;
             transition: color 0.2s ease;
-            font-size: 0.95rem; /* Adjusted link font size for mobile */
+            font-size: 0.95rem; /* Default for mobile */
+        }
+        @media (min-width: 640px) {
+            .project-item a { font-size: 1rem; }
         }
         @media (min-width: 768px) {
-            .project-item a {
-                font-size: 1rem; /* Standard link font size on medium screens and up */
-            }
+            .project-item a { font-size: 1.05rem; }
         }
         .project-item a:hover {
             text-decoration: underline;
-            color: #0c4a6e; /* Even darker blue on hover */
+            color: #0c4a6e;
         }
+
         footer {
-            background-color: #cbd5e1; /* Gray footer */
+            background-color: #cbd5e1;
             border-radius: 1rem;
-            padding: 1rem; /* Adjusted padding for mobile */
-            margin-top: 1.5rem; /* Adjusted margin */
+            padding: 1rem; /* Default for mobile */
+            margin-top: 1.5rem;
             box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
-            font-size: 0.85rem; /* Adjusted font size for mobile footer */
+            font-size: 0.85rem; /* Default for mobile */
+        }
+        @media (min-width: 640px) {
+            footer { padding: 1.25rem; font-size: 0.9rem; }
         }
         @media (min-width: 768px) {
-            footer {
-                padding: 1.5rem;
-                margin-top: 2.5rem;
-                font-size: 0.9rem;
-            }
+            footer { padding: 1.5rem; margin-top: 2.5rem; font-size: 0.9rem; }
         }
     </style>
 </head>
@@ -306,7 +327,6 @@
                         <p class="text-base sm:text-lg text-gray-700"><strong>Role & Contributions:</strong> Developer, Data Analyst</p>
                         <p class="text-gray-700 mt-2 leading-relaxed"><strong>Problem Addressed:</strong> The "PerfusionCalc" project addresses the critical need for accurate and efficient calculations in cardiac perfusion procedures. Manual calculations can be time-consuming and prone to human error, which can have significant implications in a clinical setting. This tool aims to mitigate these risks by providing a reliable and streamlined method for essential perfusion-related computations.</p>
                         <p class="text-gray-700 mt-2 leading-relaxed"><strong>Technologies Used:</strong> Developed primarily using Python, this project likely leverages its robust mathematical capabilities for precise calculations. Depending on the interface, it might also integrate libraries for graphical user interface (GUI) development to ensure ease of use for medical professionals.</p>
-                        <p class="text-gray-700 mt-2 leading-relaxed"><strong>Key Outcomes/Results:</strong> "PerfusionCalc" delivers a functional and user-friendly tool that assists perfusionists with critical calculations, enhancing accuracy and operational workflow during cardiac surgeries. This project showcases my ability to apply programming and analytical skills to solve real-world clinical challenges, bridging my background in Cardiac Perfusion Technology with my expertise in Health Informatics.</p>
                         <p class="mt-3 sm:mt-4">
                             <a href="https://github.com/vasudhareddy6429/perfusioncalc-App" target="_blank" class="text-blue-700 hover:text-blue-900 text-base sm:text-lg">View Project on GitHub &rarr;</a>
                         </p>
